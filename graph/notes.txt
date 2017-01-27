@@ -1,0 +1,4 @@
+- BFS uses a queue
+- DFS uses a stack
+- DFS uses less memory than BFS for large graphs since you don't have to store all child pointers at each level
+- Use BFS for wanting to find items near the root node and DFS
