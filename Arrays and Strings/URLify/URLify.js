@@ -1,3 +1,8 @@
+// Change all spaces in a string to %20 given its true length
+// Additional space will be provided at the end of the string
+// Using an array of characters for Javascript
+// O(n) Time
+// O(1) Space
 var URLify = function(str, len) {
 	if(!Array.isArray(str) || typeof len != "number")
 		return -1;
