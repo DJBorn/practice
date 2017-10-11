@@ -1,6 +1,6 @@
 // Search for element in a rotated sorted array
 // O(log n) Time
-// O(log n) Space
+// O(1) Space
 
 var searchSortedRotatedArr = function(arr, val) {
     function binarySearch(start, end, val) {
