@@ -1,3 +1,7 @@
+// Reverse linked list
+// O(n) Time
+// O(1) Space
+
 var reverseList = function(head) {
     if(!head)
         return null;
