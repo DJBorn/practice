@@ -24,6 +24,7 @@ var parenthesisChecker = function(str) {
         return false;
     return true;
 }
+
 console.log("Check {([])}")
 console.log(parenthesisChecker("{([])}"));
 console.log("Check (){}")
