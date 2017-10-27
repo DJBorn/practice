@@ -24,6 +24,5 @@ var GCDArray = function(arr) {
 
 console.log("GCDArray([1, 2, 3])");
 console.log(GCDArray([1, 2, 3]));
-
 console.log("GCDArray([2, 4, 6, 8])");
 console.log(GCDArray([2, 4, 6, 8]));
