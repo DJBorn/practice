@@ -1,4 +1,4 @@
-// Construct a BST given an array of it's level order traversal
+// Construct a BST given an array of its level order traversal
 // O(n) Time
 // O(n) Space
 
