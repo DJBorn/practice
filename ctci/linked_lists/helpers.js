@@ -1,40 +1,24 @@
 module.exports = {
     constructLLFromArr: function (arr) {
-        if(arr.length == 0)
-            return null;
-        let head = {
-            data: arr[0],
-            next: null
-        };
-        let curNode = head;
+        let head = null;
     
-        for(let i = 1; i < arr.length; i++) {
+        for(let i = arr.length-1; i >= 0; i--) {
             let newNode = {
                 data: arr[i],
-                next: null
+                next: head
             }
-            curNode.next = newNode;
-            curNode = curNode.next;
+            head = newNode;
         }
         
         return head;
     },
     compareLL: function (a, b) {
-        if(a == null && b == null)
-            return true;
-        if((a == null && b != null) || (a != null && b == null))
-            return false;
-        let curA = a;
-        let curB = b;
-    
-        while(curA != null && curB != null) {
-            if(curA.data != curB.data)
+        while(a != null && b != null) {
+            if(a.data != b.data)
                 return false;
-            curA = curA.next;
-            curB = curB.next;
+            a = a.next;
+            b = b.next;
         }
-        if(curA != null || curB != null)
-            return false;
-        return true;
+        return a == null && b == null;
     }
 }
