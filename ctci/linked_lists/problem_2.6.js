@@ -3,6 +3,8 @@
 
 var helpers = require('./helpers.js');
 
+// O(n) Time
+// O(1) Space
 function isPalindrome(head) {
     // O(n)
     let middle = findMiddleNode(head);
