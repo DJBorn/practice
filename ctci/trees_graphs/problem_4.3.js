@@ -3,7 +3,7 @@
 
 // O(n) Time
 // O(n) Space
-// Where n is length of array
+// Where n is number of nodes in the tree
 
 const helpers = require('./helpers.js');
 
