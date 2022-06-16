@@ -29,6 +29,7 @@ class BST:
     def print_tree(self):
         print(self.root)
 
+
 tree = BST()
 
 tree.add_value(4)
