@@ -41,8 +41,11 @@ class Trie:
             words.append(word)
         for i, node in enumerate(node.children):
             if node is not None:
-                words = words + (self._get_all_words_from_trie_node(word + chr(ord("a") + i), node))
+                words = words + (
+                    self._get_all_words_from_trie_node(word + chr(ord("a") + i), node)
+                )
         return words
+
 
 trie = Trie()
 trie.insert("cab")
