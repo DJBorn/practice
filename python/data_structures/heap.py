@@ -19,7 +19,10 @@ class MaxHeap:
             greater_child_index = right_child_index
             greater_child = self.data[right_child_index]
 
-        if left_child_index < len(self.data) and self.data[left_child_index] > greater_child:
+        if (
+            left_child_index < len(self.data)
+            and self.data[left_child_index] > greater_child
+        ):
             greater_child_index = left_child_index
 
         if greater_child_index is None:
@@ -30,7 +33,7 @@ class MaxHeap:
             self._bubble_down(greater_child_index)
 
     def _bubble_up(self, index):
-        parent_index = math.floor((index - 1)/2)
+        parent_index = math.floor((index - 1) / 2)
         if index > 0 and self.data[index] > self.data[parent_index]:
             self._swap(index, parent_index)
             self._bubble_up(parent_index)
@@ -48,6 +51,7 @@ class MaxHeap:
         self.data.pop()
         self._bubble_down(0)
         return return_value
+
 
 my_heap = MaxHeap()
 

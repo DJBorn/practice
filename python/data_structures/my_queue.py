@@ -4,7 +4,7 @@ class Node:
         self.next = None
 
 
-class Queue:
+class MyQueue:
     def __init__(self):
         self.head = None
         self.tail = None
@@ -17,7 +17,7 @@ class Queue:
             self.tail.next = Node(value)
             self.tail = self.tail.next
 
-    def dequeue(self):
+    def demy_queue(self):
         if self.head is None:
             return
         return_value = self.head.value
@@ -27,15 +27,15 @@ class Queue:
         return return_value
 
 
-queue = Queue()
-queue.insert(1)
-queue.insert(2)
-queue.insert(3)
-queue.insert(4)
+my_queue = MyQueue()
+my_queue.insert(1)
+my_queue.insert(2)
+my_queue.insert(3)
+my_queue.insert(4)
 
-assert queue.dequeue() == 1
-assert queue.dequeue() == 2
-queue.insert(5)
-assert queue.dequeue() == 3
-assert queue.dequeue() == 4
-assert queue.dequeue() == 5
+assert my_queue.demy_queue() == 1
+assert my_queue.demy_queue() == 2
+my_queue.insert(5)
+assert my_queue.demy_queue() == 3
+assert my_queue.demy_queue() == 4
+assert my_queue.demy_queue() == 5
