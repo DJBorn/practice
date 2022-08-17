@@ -17,7 +17,7 @@ class MyQueue:
             self.tail.next = Node(value)
             self.tail = self.tail.next
 
-    def demy_queue(self):
+    def dequeue(self):
         if self.head is None:
             return
         return_value = self.head.value
@@ -26,6 +26,9 @@ class MyQueue:
             self.tail = None
         return return_value
 
+    def is_empty(self):
+        return self.head is None
+
 
 my_queue = MyQueue()
 my_queue.insert(1)
@@ -33,9 +36,9 @@ my_queue.insert(2)
 my_queue.insert(3)
 my_queue.insert(4)
 
-assert my_queue.demy_queue() == 1
-assert my_queue.demy_queue() == 2
+assert my_queue.dequeue() == 1
+assert my_queue.dequeue() == 2
 my_queue.insert(5)
-assert my_queue.demy_queue() == 3
-assert my_queue.demy_queue() == 4
-assert my_queue.demy_queue() == 5
+assert my_queue.dequeue() == 3
+assert my_queue.dequeue() == 4
+assert my_queue.dequeue() == 5

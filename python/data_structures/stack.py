@@ -23,6 +23,9 @@ class Stack:
         self.head = self.head.next
         return return_value
 
+    def is_empty(self):
+        return self.head is None
+
 
 stack = Stack()
 stack.insert(1)
