@@ -30,4 +30,3 @@ assert my_hash.get("daniel") == 123
 assert my_hash.get("billy") == 222
 assert my_hash.get("eaniek") == 321
 assert my_hash.get("eanhel") is None
-
